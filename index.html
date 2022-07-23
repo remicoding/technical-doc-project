@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Data Structures</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="doc-grid">
+        <nav id="navbar">
+            <header>Basic Data Structures</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#introduction">Introduction</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#prerequisites">Prerequisites</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#python">Python</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#numbers">Numbers</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#list">List</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#tuple">Tuple</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#string">String</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#set">Set</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#dictionary">Dictionary</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#stack">Stack</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#queue">Queue</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#linked_list">Linked Linked</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#hash_table">Hash Table</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#heap">Heap</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#references">References</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-footer">
+            <main id="main-doc">
+                <section id="introduction" class="main-section">
+                    <header>Introduction</header>
+                    <article>
+                        <p>
+                            Data structure is a storage that is used to store and organize data. 
+                            It is a way of arranging data on a computer so that it can be 
+                            accessed and updated efficiently.
+                        </p>
+                        <p>
+                            Depending on your requirement and project, it is important to choose 
+                            the right data structure for your project. For example, if you want 
+                            to store data sequentially in the memory, then you can go for the 
+                            Array data structure.
+                        </p>
+                        <p>
+                            Basically, data structures are divided into two categories:
+                        </p>
+                        <ul>
+                            <li>
+                                Linear data structure: the elements are arranged in sequence one 
+                                after the other. Since elements are arranged in particular order, 
+                                they are easy to implement.
+                            </li>
+                            <li>
+                                Non-linear data structure: the elements are not in any sequence. 
+                                Instead they are arranged in a hierarchical manner where one 
+                                element will be connected to one or more elements.
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section id="prerequisites" class="main-section">
+                    <header>Prerequisites</header>
+                    <article>
+                        <p>This guide assumes you have the following basic background:</p>
+                        <ul>
+                            <li>
+                                Some programming experience. If you are new to programming, try this 
+                                <a href="https://www.programiz.com/python-programming" target="_blank">
+                                    Python tutorial
+                                </a>.
+                            </li>
+                            <li>
+                                Some basic understanding Python Datatypes
+                            </li>
+                            <li>Some basic understanding of Object Oriented Programing (OOP)</li>
+                        </ul>
+                    </article>
+                </section>
+                <section id="python" class="main-section">
+                    <header>Python</header>
+                    <article>
+                        <p>
+                            Python is a high-level, interpreted, general-purpose programming language. 
+                            Its design philosophy emphasizes code readability with the use of 
+                            significant indentation. A high-level programming language is a programming 
+                            language with strong abstraction from the details of the computer. An 
+                            interpreter is a computer program that directly executes instructions 
+                            written in a programming or scripting language, without requiring them 
+                            previously to have been compiled into a machine language program. A 
+                            general-purpose programming language (GPL) is a programming language 
+                            designed to be used for building software in a wide variety of application 
+                            domains, across a multitude of hardware configurations and operating systems.
+                        </p>
+                        <p>
+                            Its core philosophy is summarized as:
+                        </p>
+                        <ul>
+                            <li>Beautiful is better than ugly.</li>
+                            <li>Explicit is better than implicit.</li>
+                            <li>Simple is better than complex.</li>
+                            <li>Complex is better than complicated.</li>
+                            <li>Readability counts.</li>
+                        </ul>
+                        <p>
+                            We will make use of this philosophy throughout this documentation.
+                        </p>
+                    </article>
+                </section>
+                <section id="numbers" class="main-section">
+                    <header>Numbers</header>
+                    <article>
+                        <p>
+                            Python supports integers, floating-point numbers and complex numbers. 
+                            They are defined as <code>int</code>, <code>float</code>, and 
+                            <code>complex</code> classes in Python.
+                        </p>
+                        <p>
+                            Integers and floating points are separated by the presence or absence 
+                            of a decimal point. For instance, 5 is an integer whereas 5.0 is a 
+                            floating-point number.
+                        </p>
+                        <p>
+                            Complex numbers are written in the form, <code>x + yj</code>, where 
+                            <code>x</code> is the real part and <code>y</code> is the imaginary part.
+                        </p>
+                        <p>
+                            The number data structure can be used to store any value and mathematical 
+                            operations such as addition, substractions, division and multiplication can
+                            be done with them.
+                        </p>
+                        <p>Here is an example:</p>
+                        <code>an_int = 5
+                            a_float = 5.0
+                            a_complex = 5 + 5j
+                        </code>
+                    </article>
+                </section>
+                <section id="list" class="main-section">
+                    <header>List</header>
+                    <article>
+                        <p>
+                            Python lists are one of the most versatile data types that allow us to work 
+                            with multiple elements at once. In Python, a list is created by placing 
+                            elements inside square brackets <code>[]</code>, separated by commas. A list 
+                            can have any number of items and they may be of different types (integer, 
+                            float, etc.). A list can also have another list as an item. This is called a 
+                            nested list.
+                        </p>
+                        <p>
+                            There are various ways in which we can access the elements of a list, mainly
+                            indexing and slicing. The operations that can be done on a list are: add, 
+                            change and delete elements.
+                        </p>
+                        <p>Here are examples of implementation of a list:</p>
+                        <code># declare an empty List
+                            empty_list = []
+
+                            # declare a list with elements
+                            a_list = [1, 2.0, 3 + 4j]
+
+                            # Access the first element in a List
+                            first_element = a_list[0]    # 1
+
+                            # Select all elements after the first one
+                            other_element = a_list[1:]   # [2.0, 3 + 4j]
+
+                            # Add an element to a List
+                            empty_list.append(5)         # [5]
+
+                            # Change an element of the List
+                            a_list[2] = 6 + 7j           # [1, 2.0, 6 +7j]
+
+                            # Delete an element from the List
+                            del a_list[2]                # [1, 2.0]
+                        </code>
+                    </article>
+                </section>
+                <section id="tuple" class="main-section">
+                    <header>Tuple</header>
+                    <article>
+                        <p>
+                            A tuple in Python is similar to a list. The difference between the two is that 
+                            we cannot change the elements of a tuple once it is assigned whereas we can 
+                            change the elements of a list.
+                        </p>
+                        <p>
+                            A tuple is created by placing all the items (elements) inside parentheses <code>()</code>, 
+                            separated by commas. The parentheses are optional, however, it is a good practice 
+                            to use them. A tuple can have any number of items and they may be of different 
+                            types (integer, float, list, etc.).
+                        </p>
+                        <p>Here are some examples of tuples with the same operations as with list:</p>
+                        <code># declare an empty Tuple
+                            empty_tuple = ()
+
+                            # declare a Tuple with one element
+                            one_tuple = (1,)
+
+                            # declare a Tuple with elements
+                            a_tuple = (1, 2, 4.5, 8 + 9j, [0, 3])
+
+                            # Access the first element in a List
+                            first_element = a_tuple[0]       # (1,)
+
+                            # Select last 2 elements
+                            other_element = a_tuple[1:]      # (8 + 9j, [0, 3])
+
+                            # Add an element
+                            new_tuple = first_element + (2)  # (1, 2)
+
+                            # Delete an element
+                            del a_tuple                      # 'a_tuple' is not defined
+                        </code>
+                    </article>
+                </section>
+                <section id="string" class="main-section">
+                    <header>String</header>
+                    <article>
+                        <p>
+                            A string is a sequence of characters. A character is simply a symbol. For 
+                            example, the English language has 26 characters. Computers do not deal with 
+                            characters, they deal with numbers (binary). Even though you may see 
+                            characters on your screen, internally it is stored and manipulated as a 
+                            combination of 0s and 1s. This conversion of character to a number is called 
+                            encoding, and the reverse process is decoding. ASCII and Unicode are some of 
+                            the popular encodings used. In Python, a string is a sequence of Unicode 
+                            characters. Unicode was introduced to include every character in all 
+                            languages and bring uniformity in encoding. You can learn about Unicode from 
+                            <a href="https://docs.python.org/3.3/howto/unicode.html" target="_blank">
+                                Python Unicode
+                            </a>.
+                        </p>
+                        <p>
+                            Strings can be created by enclosing characters inside a single quote or 
+                            double-quotes. Even triple quotes can be used in Python but generally used to 
+                            represent multiline strings and docstrings. We can access individual characters 
+                            using indexing and a range of characters using slicing just like with lists. 
+                            Strings are immutable like tuples, the elements can't be changed nor deleted.
+                        </p>
+                        <p>
+                            The example here will focus on the iterability of string which can be apply to
+                            almost all the data structure on this documentation besides numbers.
+                        </p>
+                        <code># Iterating through a string
+                            count = 0
+                            for letter in 'Hello World':
+                                if(letter == 'l'):
+                                    count += 1                      # 3
+                            
+                            str = 'cold'
+
+                            # enumerate()
+                            list_enumerate = list(enumerate(str))   # [(0, 'c'), (1, 'o'), (2, 'l'), (3, 'd')]
+
+                            #character count
+                            len(str)                                # 4
+                        </code>
+                    </article>
+                </section>
+                <section id="set" class="main-section">
+                    <header>Set</header>
+                    <article>
+                        <p>
+                            A set is an unordered collection of items. Every set element is unique 
+                            (no duplicates) and must be immutable (cannot be changed: integers, strings, 
+                            etc.). However, a set itself is mutable. We can add or remove items from it. 
+                            Sets can also be used to perform mathematical set operations like union, 
+                            intersection, symmetric difference, etc.
+                        </p>
+                        <p>
+                            A set is created by placing all the items (elements) inside curly braces 
+                            <code>{}</code>, separated by comma, or by using the built-in 
+                            <code>set()</code> function. Sets are mutable. However, since they are 
+                            unordered, indexing has no meaning. We cannot access or change an element 
+                            of a set using indexing or slicing. Set data type does not support it. We 
+                            can add a single element using the <code>add()</code> method, and multiple 
+                            elements using the <code>update()</code> method. The <code>update()</code> 
+                            method can take tuples, lists, strings or other sets as its argument. In 
+                            all cases, duplicates are avoided.
+                        </p>
+                        <p>Here are examples of sets and some operations specific to them:</p>
+                        <code># set of mixed datatypes
+                            my_set = {1.0, "Hello", (1, 2, 3)}      # {1.0, (1, 2, 3), 'Hello'}
+
+                            # add an element
+                            my_set.add(2)                           # {1.0, (1, 2, 3), 'Hello', 2}
+
+                            # add multiple elements
+                            my_set.update([2, 3, 4])                # {1.0, (1, 2, 3), 'Hello', 2, 3, 4}
+
+                            # initialize A and B
+                            A = {1, 2, 3, 4, 5}
+                            B = {4, 5, 6, 7, 8}
+
+                            # Set union method using | operator
+                            A | B                                   # {1, 2, 3, 4, 5, 6, 7, 8}
+
+                            # # Intersection of sets using & operator
+                            A & B                                   # {4, 5}
+
+                            # Difference of two sets using - operator on A
+                            A - B                                   # {1, 2, 3}
+
+                            # Symmetric difference of two sets using ^ operator
+                            A ^ B                                   # {1, 2, 3, 6, 7, 8}
+                        </code>
+                    </article>
+                </section>
+                <section id="dictionary" class="main-section">
+                    <header>Dictionary</header>
+                    <article>
+                        <p>
+                            Python dictionary is an unordered collection of items. Each item of a 
+                            dictionary has a <code>key/value</code> pair. Dictionaries are optimized 
+                            to retrieve values when the key is known.
+                        </p>
+                        <p>
+                            Creating a dictionary is as simple as placing items inside curly braces 
+                            <code>{}</code> separated by commas. An item has a <code>key</code> and 
+                            a corresponding <code>value</code> that is expressed as a pair 
+                            (<strong>key: value</strong>). While the values can be of any data type 
+                            and can repeat, keys must be of immutable type (string, number or tuple 
+                            with immutable elements) and must be unique.
+                        </p>
+                        <p>
+                            While indexing is used with other data types to access values, a 
+                            dictionary uses <code>keys</code>. Keys can be used either inside square 
+                            brackets <code>[]</code> or with the <code>get()</code> method. 
+                            Dictionaries are mutable. We can add new items or change the value of 
+                            existing items using an assignment operator. We can remove a particular 
+                            item in a dictionary by using the <code>pop()</code> method. This method 
+                            removes an item with the provided <code>key</code> and returns the 
+                            <code>value</code>. We can also use the <code>del</code> keyword to remove 
+                            individual items or the entire dictionary itself.
+                        </p>
+                        <p>Here are examples of dictionary:</p>
+                        <code># empty dictionary
+                            my_dict = {}
+
+                            # dictionary with mixed keys
+                            my_dict = {'apples': 10, 'name': 'John', 1: [2, 4, 3]} # {'apples': 10, 'name': 'John', 1: [2, 4, 3]}
+
+                            # [] for retrieving elements
+                            my_dict['name']                                        # 'John'
+
+                            # get for retrieving elements
+                            my_dict.get('apples')                                  # 10
+
+                            # add item
+                            my_dict['address'] = 'Downtown'                        # {'apples': 10, 'name': 'John', 1: [2, 4, 3], 'address': 'Downtown'}
+                        
+                            # remove a particular item, returns its value
+                            my_dict.pop(1)                                         # {'apples': 10, 'name': 'John', 'address': 'Downtown'}
+                        
+                            # delete the dictionary itself
+                            del my_dict
+                        </code>
+                    </article>
+                </section>
+                <section id="stack" class="main-section"></section>
+                <section id="queue" class="main-section"></section>
+                <section id="linked-list" class="main-section"></section>
+                <section id="hash-table" class="main-section"></section>
+                <section id="heap" class="main-section"></section>
+                <section id="references" class="main-section"></section>
+            </main>
+            <footer>
+                <p>&copy; 2022 - Remi Coding - <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp.org</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

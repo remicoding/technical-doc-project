@@ -1,1 +1,1 @@
-# technical-doc-project
+# Technical Documentation Project
