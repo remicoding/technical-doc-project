@@ -75,7 +75,7 @@ header {
 
 #main-doc {
     padding: 0 20px 20px;
-    margin-bottom: 110px;
+    margin-bottom: 25px;
 }
 
 #main-doc header {
@@ -93,21 +93,47 @@ section li {
     margin: 15px 0px 0px 20px;
 }
 
-article > code {
-    display: block;
-    text-align: left;
-    white-space: pre-line;
-    position: relative;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 2;
+pre {
     background-color: #f7f7f7;
-    padding: 15px;
-    margin: 10px;
+    border-radius: 20px;
+}
+
+code {
+    font-family: monospace;
+    background-color: #f7f7f7;
     border-radius: 5px;
+    word-break: normal;
+    white-space: pre-line;
 }
 
 footer {
     text-align: center;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) {
+    .doc-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "nav" 
+            "main-footer";
+    }
+
+    #navbar {
+        position: unset;
+        width: 100%;
+        border-right: none;
+        border-color: rgba(0, 22, 22, 0.4);
+        grid-area: nav;
+    }
+
+    .main-footer {
+        grid-area: main-footer;
+    }
+    
+    .last-li {
+        color: #4d4e53;
+        border-bottom: 1px solid;
+    }
 }

@@ -66,23 +66,10 @@
                     <a class="nav-link" href="#queue">Queue</a>
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <a class="nav-link" href="#linked_list">Linked Linked</a>
                 </li>
             </ul>
             <ul>
-                <li>
-                    <a class="nav-link" href="#hash_table">Hash Table</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a class="nav-link" href="#heap">Heap</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
+                <li class="last-li">
                     <a class="nav-link" href="#references">References</a>
                 </li>
             </ul>
@@ -132,9 +119,10 @@
                                 </a>.
                             </li>
                             <li>
-                                Some basic understanding Python Datatypes
+                                An understanding of Python Datatypes
                             </li>
-                            <li>Some basic understanding of Object Oriented Programing (OOP)</li>
+                            <li>An understanding of Object Oriented Programing (OOP)</li>
+                            <li>Some knowledge of program time and space complexities (Big O)</li>
                         </ul>
                     </article>
                 </section>
@@ -191,10 +179,13 @@
                             be done with them.
                         </p>
                         <p>Here is an example:</p>
-                        <code>an_int = 5
-                            a_float = 5.0
-                            a_complex = 5 + 5j
-                        </code>
+                        <pre>
+                            <code>
+                                an_int = 5
+                                a_float = 5.0
+                                a_complex = 5 + 5j
+                            </code>
+                        </pre>
                     </article>
                 </section>
                 <section id="list" class="main-section">
@@ -214,27 +205,30 @@
                             change and delete elements.
                         </p>
                         <p>Here are examples of implementation of a list:</p>
-                        <code># declare an empty List
-                            empty_list = []
+                        <pre>
+                            <code>
+                                # declare an empty List
+                                empty_list = []
 
-                            # declare a list with elements
-                            a_list = [1, 2.0, 3 + 4j]
+                                # declare a list with elements
+                                a_list = [1, 2.0, 3 + 4j]
 
-                            # Access the first element in a List
-                            first_element = a_list[0]    # 1
+                                # Access the first element in a List
+                                first_element = a_list[0]    # 1
 
-                            # Select all elements after the first one
-                            other_element = a_list[1:]   # [2.0, 3 + 4j]
+                                # Select all elements after the first one
+                                other_element = a_list[1:]   # [2.0, 3 + 4j]
 
-                            # Add an element to a List
-                            empty_list.append(5)         # [5]
+                                # Add an element to a List
+                                empty_list.append(5)         # [5]
 
-                            # Change an element of the List
-                            a_list[2] = 6 + 7j           # [1, 2.0, 6 +7j]
+                                # Change an element of the List
+                                a_list[2] = 6 + 7j           # [1, 2.0, 6 +7j]
 
-                            # Delete an element from the List
-                            del a_list[2]                # [1, 2.0]
-                        </code>
+                                # Delete an element from the List
+                                del a_list[2]                # [1, 2.0]
+                            </code>
+                        </pre>
                     </article>
                 </section>
                 <section id="tuple" class="main-section">
@@ -252,27 +246,30 @@
                             types (integer, float, list, etc.).
                         </p>
                         <p>Here are some examples of tuples with the same operations as with list:</p>
-                        <code># declare an empty Tuple
-                            empty_tuple = ()
+                        <pre>
+                            <code>
+                                # declare an empty Tuple
+                                empty_tuple = ()
 
-                            # declare a Tuple with one element
-                            one_tuple = (1,)
+                                # declare a Tuple with one element
+                                one_tuple = (1,)
 
-                            # declare a Tuple with elements
-                            a_tuple = (1, 2, 4.5, 8 + 9j, [0, 3])
+                                # declare a Tuple with elements
+                                a_tuple = (1, 2, 4.5, 8 + 9j, [0, 3])
 
-                            # Access the first element in a List
-                            first_element = a_tuple[0]       # (1,)
+                                # Access the first element in a List
+                                first_element = a_tuple[0]       # (1,)
 
-                            # Select last 2 elements
-                            other_element = a_tuple[1:]      # (8 + 9j, [0, 3])
+                                # Select last 2 elements
+                                other_element = a_tuple[1:]      # (8 + 9j, [0, 3])
 
-                            # Add an element
-                            new_tuple = first_element + (2)  # (1, 2)
+                                # Add an element
+                                new_tuple = first_element + (2)  # (1, 2)
 
-                            # Delete an element
-                            del a_tuple                      # 'a_tuple' is not defined
-                        </code>
+                                # Delete an element
+                                del a_tuple                      # 'a_tuple' is not defined
+                            </code>
+                        </pre>
                     </article>
                 </section>
                 <section id="string" class="main-section">
@@ -300,23 +297,21 @@
                             Strings are immutable like tuples, the elements can't be changed nor deleted.
                         </p>
                         <p>
-                            The example here will focus on the iterability of string which can be apply to
+                            The example here will focus on indexing of string which can be apply to
                             almost all the data structure on this documentation besides numbers.
                         </p>
-                        <code># Iterating through a string
-                            count = 0
-                            for letter in 'Hello World':
-                                if(letter == 'l'):
-                                    count += 1                      # 3
-                            
-                            str = 'cold'
+                        <pre>
+                            <code>
+                                # declare a string
+                                str = 'cold'            # 'cold'
 
-                            # enumerate()
-                            list_enumerate = list(enumerate(str))   # [(0, 'c'), (1, 'o'), (2, 'l'), (3, 'd')]
+                                # select first character
+                                str[0]                  # 'c'
 
-                            #character count
-                            len(str)                                # 4
-                        </code>
+                                #character count
+                                len(str)                # 4
+                            </code>
+                        </pre>
                     </article>
                 </section>
                 <section id="set" class="main-section">
@@ -341,31 +336,34 @@
                             all cases, duplicates are avoided.
                         </p>
                         <p>Here are examples of sets and some operations specific to them:</p>
-                        <code># set of mixed datatypes
-                            my_set = {1.0, "Hello", (1, 2, 3)}      # {1.0, (1, 2, 3), 'Hello'}
+                        <pre>
+                            <code>
+                                # set of mixed datatypes
+                                my_set = {1.0, "Hello", (1, 2, 3)}      # {1.0, (1, 2, 3), 'Hello'}
 
-                            # add an element
-                            my_set.add(2)                           # {1.0, (1, 2, 3), 'Hello', 2}
+                                # add an element
+                                my_set.add(2)                           # {1.0, (1, 2, 3), 'Hello', 2}
 
-                            # add multiple elements
-                            my_set.update([2, 3, 4])                # {1.0, (1, 2, 3), 'Hello', 2, 3, 4}
+                                # add multiple elements
+                                my_set.update([2, 3, 4])                # {1.0, (1, 2, 3), 'Hello', 2, 3, 4}
 
-                            # initialize A and B
-                            A = {1, 2, 3, 4, 5}
-                            B = {4, 5, 6, 7, 8}
+                                # initialize A and B
+                                A = {1, 2, 3, 4, 5}
+                                B = {4, 5, 6, 7, 8}
 
-                            # Set union method using | operator
-                            A | B                                   # {1, 2, 3, 4, 5, 6, 7, 8}
+                                # Set union method using | operator
+                                A | B                                   # {1, 2, 3, 4, 5, 6, 7, 8}
 
-                            # # Intersection of sets using & operator
-                            A & B                                   # {4, 5}
+                                # # Intersection of sets using & operator
+                                A & B                                   # {4, 5}
 
-                            # Difference of two sets using - operator on A
-                            A - B                                   # {1, 2, 3}
+                                # Difference of two sets using - operator on A
+                                A - B                                   # {1, 2, 3}
 
-                            # Symmetric difference of two sets using ^ operator
-                            A ^ B                                   # {1, 2, 3, 6, 7, 8}
-                        </code>
+                                # Symmetric difference of two sets using ^ operator
+                                A ^ B                                   # {1, 2, 3, 6, 7, 8}
+                            </code>
+                        </pre>
                     </article>
                 </section>
                 <section id="dictionary" class="main-section">
@@ -396,35 +394,190 @@
                             individual items or the entire dictionary itself.
                         </p>
                         <p>Here are examples of dictionary:</p>
-                        <code># empty dictionary
-                            my_dict = {}
+                        <pre>
+                            <code>
+                                # empty dictionary
+                                my_dict = {}
 
-                            # dictionary with mixed keys
-                            my_dict = {'apples': 10, 'name': 'John', 1: [2, 4, 3]} # {'apples': 10, 'name': 'John', 1: [2, 4, 3]}
+                                # dictionary with mixed keys
+                                my_dict = {'apples': 10, 'name': 'John', 1: [2, 4, 3]} # {'apples': 10, 'name': 'John', 1: [2, 4, 3]}
 
-                            # [] for retrieving elements
-                            my_dict['name']                                        # 'John'
+                                # [] for retrieving elements
+                                my_dict['name']                                        # 'John'
 
-                            # get for retrieving elements
-                            my_dict.get('apples')                                  # 10
+                                # get for retrieving elements
+                                my_dict.get('apples')                                  # 10
 
-                            # add item
-                            my_dict['address'] = 'Downtown'                        # {'apples': 10, 'name': 'John', 1: [2, 4, 3], 'address': 'Downtown'}
-                        
-                            # remove a particular item, returns its value
-                            my_dict.pop(1)                                         # {'apples': 10, 'name': 'John', 'address': 'Downtown'}
-                        
-                            # delete the dictionary itself
-                            del my_dict
-                        </code>
+                                # add item
+                                my_dict['address'] = 'Downtown'                        # {'apples': 10, 'name': 'John', 1: [2, 4, 3], 'address': 'Downtown'}
+                            
+                                # remove a particular item, returns its value
+                                my_dict.pop(1)                                         # {'apples': 10, 'name': 'John', 'address': 'Downtown'}
+                            
+                                # delete the dictionary itself
+                                del my_dict
+                            </code>
+                        </pre>
                     </article>
                 </section>
-                <section id="stack" class="main-section"></section>
-                <section id="queue" class="main-section"></section>
-                <section id="linked-list" class="main-section"></section>
-                <section id="hash-table" class="main-section"></section>
-                <section id="heap" class="main-section"></section>
-                <section id="references" class="main-section"></section>
+                <section id="stack" class="main-section">
+                    <header>Stack</header>
+                    <article>
+                        <p>
+                            A stack is a linear data structure that follows the principle of 
+                            <strong>Last In First Out (LIFO)</strong>. This means the last element 
+                            inserted inside the stack is removed first. You can think of the stack 
+                            data structure as the pile of plates on top of another. Here, you can:
+                            <ul>
+                                <li>Put a new plate on top</li>
+                                <li>Remove the top plate</li>
+                            </ul>
+                        And, if you want the plate at the bottom, you must first remove all the 
+                        plates on top. This is exactly how the stack data structure works.
+                        </p>
+                        <p>
+                            In programming terms, putting an item on top of the stack is called push 
+                            and removing an item is called pop. There are some basic operations that 
+                            allow us to perform different actions on a stack.
+                            <ul>
+                                <li><strong>push</strong>: Add an element to the top of a stack</li>
+                                <li><strong>pop</strong>: Remove an element from the top of a stack</li>
+                                <li><strong>is_empty</strong>: Check if the stack is empty</li>
+                                <li><strong>is_full</strong>: Check if the stack is full</li>
+                                <li><strong>peek</strong>: Get the value of the top element without removing it</li>
+                            </ul>
+                            For the implementation of a stack, the push and pop operations take 
+                            constant time, i.e. O(1). 
+                        </p>
+                        <p>
+                            Although stack is a simple data structure to implement, it is very powerful. 
+                            The most common uses of a stack are:
+                            <ul>
+                                <li>
+                                    <strong>To reverse a word</strong>- Put all the letters in a stack 
+                                    and pop them out. Because of the LIFO order of stack, you will get 
+                                    the letters in reverse order.
+                                </li>
+                                <li>
+                                    <strong>In compilers</strong>- Compilers use the stack to calculate 
+                                    the value of expressions like <code>2 + 4 / 5 (7 - 9)</code> by 
+                                    converting the expression to prefix or postfix form.
+                                </li>
+                                <li>
+                                    <strong>In browsers</strong>- The back button in a browser saves all 
+                                    the URLs you have visited previously in a stack. Each time you visit 
+                                    a new page, it is added on top of the stack. When you press the back 
+                                    button, the current URL is removed from the stack, and the previous 
+                                    URL is accessed.
+                                </li>
+                            </ul>
+                        </p>
+                        <p>Here is the most common stack implementation using lists:</p>
+                        <pre>
+                            <code>
+                                # create an empty
+                                a_stack = []                # []
+
+                                # push an element into the stack
+                                a_stack.append(1)           # [1]
+
+                                # pop an element from the stack
+                                a_stack.pop()               # []
+
+                                # check if stack is empty
+                                len(a_stack) == 0           # True
+
+                                # check if stack is full
+                                full_len = 10
+                                len(a_stack) == full_len    # False
+
+                                # peek the stack
+                                a_stack[-1]                 # []
+                            </code>
+                        </pre>
+                    </article>
+                </section>
+                <section id="queue" class="main-section">
+                    <header>Queue</header>
+                    <article>
+                        <p>
+                            A queue is a useful data structure in programming. It is similar to the 
+                            ticket queue outside a cinema hall, where the first person entering the 
+                            queue is the first person who gets the ticket. Queue follows the 
+                            <strong>First In First Out (FIFO)</strong> rule - the item that goes in 
+                            first is the item that comes out first. In programming terms, putting 
+                            items in the queue is called enqueue, and removing items from the queue 
+                            is called dequeue.
+                        </p>
+                        <p>
+                            A queue is an object (an abstract data structure - ADT) that allows the 
+                            following operations:
+                            <ul>
+                                <li><strong>enqueue</strong>: Add an element to the end of the queue</li>
+                                <li><strong>dequeue</strong>: Remove an element from the front of the queue</li>
+                                <li><strong>is_empty</strong>: Check if the queue is empty</li>
+                                <li><strong>is_full</strong>: Check if the queue is full</li>
+                                <li><strong>peek</strong>: Get the value of the front of the queue without removing it</li>
+                            </ul>
+                            The complexity of enqueue and dequeue operations in a queue using an 
+                            array is O(1).
+                        </p>
+                        <p>
+                            Some common use of queues are followed:
+                            <ul>
+                                <li>CPU scheduling, Disk Scheduling.</li>
+                                <li>
+                                    When data is transferred asynchronously between two processes. 
+                                    The queue is used for synchronization. For example: IO Buffers, 
+                                    pipes, file IO, etc.
+                                </li>
+                                <li>Handling of interrupts in real-time systems.</li>
+                                <li>Call Center phone systems use Queues to hold people calling them in order.</li>
+                            </ul>
+                        </p>
+                        <p>Here is the most common queue implementation using lists:</p>
+                        <pre>
+                            <code>
+                                # create a queue
+                                a_queue = []                # []
+
+                                # add an element: enqueue
+                                a_queue.append(2)           # [2]
+
+                                # remove an element: dequeue
+                                a_queue.pop(0)              # []
+
+                                # check if queue is empty
+                                len(a_stack) == 0           # True
+
+                                # check if queue is full
+                                full_len = 10
+                                len(a_stack) == full_len    # False
+
+                                # peek the queue
+                                a_stack[0]                  # []
+                            </code>
+                        </pre>
+                    </article>
+                </section>
+                <section id="references" class="main-section">
+                    <header>References</header>
+                    <p>
+                        All the documentation and explanation in this page are taken from:
+                        <ul>
+                            <li>
+                                <a href="https://www.programiz.com/python-programming" target="_blank">
+                                    Programiz: Learn Python Programming
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.programiz.com/dsa" target="_blank">
+                                    Programiz: Learning DS & Algorithms
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+                </section>
             </main>
             <footer>
                 <p>&copy; 2022 - Remi Coding - <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp.org</a></p>
